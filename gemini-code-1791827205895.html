@@ -1,0 +1,1896 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pind Restaurant Johar Town, Lahore - Authentic Desi Flavours, Mutton & Chicken Karahi, Handi, Tikka BBQ & Family Platters. Call (042) 35189989.">
+    <meta name="keywords" content="Pind Restaurant, Johar Town Lahore, Desi Food Lahore, Pakistani Restaurant, Chicken Karahi, Mutton Karahi, BBQ Platter">
+    <title>PIND RESTAURANT — Johar Town, Lahore | Desi Flavours & Authentic Dining</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Schema.org JSON-LD Structured Data for Local Restaurant SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Pind Restaurant",
+      "image": "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=1200&q=80",
+      "telephone": "+92-42-35189989",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "30 Mughal Arcade / Civic Centre area, Johar Town",
+        "addressLocality": "Lahore",
+        "addressRegion": "Punjab",
+        "postalCode": "54782",
+        "addressCountry": "PK"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 31.4697,
+        "longitude": 74.2985
+      },
+      "url": "https://maps.app.goo.gl/HofQprsTmSy1446v5",
+      "servesCuisine": ["Pakistani", "Desi", "Barbecue", "Halal"],
+      "priceRange": "Rs. 500 - Rs. 3500",
+      "hasMap": "https://maps.app.goo.gl/HofQprsTmSy1446v5"
+    }
+    </script>
+
+    <style>
+        /* CSS Variables & Design Tokens */
+        :root {
+            --bg-dark: #0f0c0a;
+            --bg-card: #181410;
+            --bg-surface: #221c17;
+            --cream-light: #f7f1e5;
+            --cream-muted: #dcd0bf;
+            --terracotta: #c85a32;
+            --terracotta-hover: #b04923;
+            --gold-antique: #d4a359;
+            --gold-light: #ebd09e;
+            --green-accent: #4a6b48;
+            --border-color: rgba(212, 163, 89, 0.18);
+            --border-muted: rgba(247, 241, 229, 0.08);
+            --shadow-subtle: 0 10px 30px rgba(0, 0, 0, 0.6);
+            --transition-smooth: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        /* Reset & Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--cream-light);
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            line-height: 1.6;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1, h2, h3, h4, .brand-font {
+            font-family: 'Cinzel', serif;
+            letter-spacing: 0.03em;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Utility Classes */
+        .container {
+            width: 100%;
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        .section-padding {
+            padding: 6rem 0;
+        }
+
+        .gold-gradient-text {
+            background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold-antique) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .terracotta-bg {
+            background-color: var(--terracotta);
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.6rem;
+            padding: 0.95rem 2rem;
+            font-size: 0.9rem;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            border-radius: 4px;
+            transition: var(--transition-smooth);
+            cursor: pointer;
+            border: 1px solid transparent;
+        }
+
+        .btn-primary {
+            background-color: var(--terracotta);
+            color: #ffffff;
+            box-shadow: 0 4px 15px rgba(200, 90, 50, 0.3);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--terracotta-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(200, 90, 50, 0.45);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--cream-light);
+            border-color: var(--gold-antique);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--gold-antique);
+            color: var(--bg-dark);
+            transform: translateY(-2px);
+        }
+
+        .btn-gold {
+            background: linear-gradient(135deg, var(--gold-antique), #b8860b);
+            color: var(--bg-dark);
+            font-weight: 700;
+        }
+
+        .btn-gold:hover {
+            filter: brightness(1.1);
+            transform: translateY(-2px);
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 0.35rem 0.9rem;
+            background: rgba(212, 163, 89, 0.12);
+            border: 1px solid var(--gold-antique);
+            color: var(--gold-antique);
+            font-size: 0.75rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            border-radius: 50px;
+            margin-bottom: 1rem;
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 750px;
+            margin: 0 auto 4rem auto;
+        }
+
+        .section-header h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--cream-light);
+        }
+
+        .section-header p {
+            color: var(--cream-muted);
+            font-size: 1.05rem;
+        }
+
+        .divider {
+            height: 2px;
+            width: 80px;
+            background: linear-gradient(90deg, transparent, var(--gold-antique), transparent);
+            margin: 1.2rem auto;
+        }
+
+        /* Glassmorphism Navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(15, 12, 10, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border-color);
+            transition: var(--transition-smooth);
+            padding: 1rem 0;
+        }
+
+        .navbar-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .brand-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            text-decoration: none;
+        }
+
+        .brand-logo-icon {
+            width: 42px;
+            height: 42px;
+            background: var(--terracotta);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--cream-light);
+            font-size: 1.3rem;
+            border: 1px solid var(--gold-antique);
+        }
+
+        .brand-text h1 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--cream-light);
+            line-height: 1;
+        }
+
+        .brand-text span {
+            font-size: 0.65rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--gold-antique);
+            display: block;
+            margin-top: 2px;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 2.2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--cream-muted);
+            transition: var(--transition-smooth);
+            position: relative;
+            padding: 0.3rem 0;
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            color: var(--gold-antique);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--gold-antique);
+            transition: var(--transition-smooth);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .hamburger {
+            display: none;
+            background: transparent;
+            border: none;
+            color: var(--cream-light);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Mobile Drawer Navigation */
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 80%;
+            max-width: 380px;
+            height: 100vh;
+            background-color: var(--bg-surface);
+            z-index: 1001;
+            padding: 2.5rem 2rem;
+            box-shadow: -5px 0 25px rgba(0,0,0,0.8);
+            transition: right 0.4s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .mobile-menu.open {
+            right: 0;
+        }
+
+        .mobile-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: rgba(0,0,0,0.7);
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition-smooth);
+        }
+
+        .mobile-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .mobile-menu-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 1.5rem;
+        }
+
+        .mobile-close {
+            background: transparent;
+            border: none;
+            color: var(--cream-light);
+            font-size: 1.8rem;
+            cursor: pointer;
+        }
+
+        .mobile-links {
+            list-style: none;
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .mobile-links a {
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--cream-light);
+            display: block;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding-top: 80px;
+            background: linear-gradient(to right, rgba(15, 12, 10, 0.9) 30%, rgba(15, 12, 10, 0.5)), url('https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+        }
+
+        .hero-content {
+            max-width: 700px;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 3.8rem;
+            line-height: 1.15;
+            margin-bottom: 1.5rem;
+            color: var(--cream-light);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--cream-muted);
+            margin-bottom: 2.5rem;
+            font-weight: 300;
+        }
+
+        .hero-cta-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .verified-notice {
+            margin-top: 2.5rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            border: 1px solid var(--border-color);
+            font-size: 0.82rem;
+            color: var(--gold-light);
+        }
+
+        /* About Section */
+        .about {
+            background-color: var(--bg-surface);
+            position: relative;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-image-wrapper {
+            position: relative;
+        }
+
+        .about-image-wrapper img {
+            border-radius: 8px;
+            box-shadow: var(--shadow-subtle);
+            border: 1px solid var(--border-color);
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+        }
+
+        .about-badge-floating {
+            position: absolute;
+            bottom: -20px;
+            right: -20px;
+            background: var(--bg-card);
+            border: 1px solid var(--gold-antique);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: var(--shadow-subtle);
+            text-align: center;
+        }
+
+        .about-badge-floating h4 {
+            font-size: 1.8rem;
+            color: var(--gold-antique);
+        }
+
+        .about-badge-floating p {
+            font-size: 0.75rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--cream-muted);
+        }
+
+        .about-text h2 {
+            font-size: 2.4rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.25;
+        }
+
+        .about-text p {
+            color: var(--cream-muted);
+            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
+        }
+
+        .about-features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .feature-icon {
+            color: var(--gold-antique);
+            font-size: 1.2rem;
+            margin-top: 3px;
+        }
+
+        .feature-item h4 {
+            font-size: 1rem;
+            margin-bottom: 0.2rem;
+        }
+
+        .feature-item p {
+            font-size: 0.85rem;
+            margin-bottom: 0;
+        }
+
+        /* Specialties Section */
+        .specialties {
+            background-color: var(--bg-dark);
+        }
+
+        .specialty-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+
+        .specialty-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-muted);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: var(--transition-smooth);
+        }
+
+        .specialty-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--gold-antique);
+            box-shadow: var(--shadow-subtle);
+        }
+
+        .specialty-img-box {
+            height: 230px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .specialty-img-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .specialty-card:hover .specialty-img-box img {
+            transform: scale(1.08);
+        }
+
+        .specialty-price-tag {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: var(--terracotta);
+            color: #fff;
+            padding: 0.3rem 0.8rem;
+            font-weight: 700;
+            font-size: 0.9rem;
+            border-radius: 4px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
+
+        .specialty-content {
+            padding: 1.8rem;
+        }
+
+        .specialty-content h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            color: var(--cream-light);
+        }
+
+        .specialty-content p {
+            color: var(--cream-muted);
+            font-size: 0.9rem;
+            margin-bottom: 1.2rem;
+        }
+
+        /* Menu Section & Filters */
+        .menu-section {
+            background-color: var(--bg-surface);
+            position: relative;
+        }
+
+        .menu-filter-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            margin-bottom: 3rem;
+        }
+
+        .menu-filter-btn {
+            background: var(--bg-card);
+            color: var(--cream-muted);
+            border: 1px solid var(--border-muted);
+            padding: 0.6rem 1.4rem;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: var(--transition-smooth);
+        }
+
+        .menu-filter-btn:hover, .menu-filter-btn.active {
+            background: var(--terracotta);
+            color: #fff;
+            border-color: var(--terracotta);
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 1.8rem;
+        }
+
+        .menu-item-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-muted);
+            padding: 1.5rem;
+            border-radius: 8px;
+            display: flex;
+            gap: 1.2rem;
+            transition: var(--transition-smooth);
+        }
+
+        .menu-item-card:hover {
+            border-color: var(--gold-antique);
+            background: rgba(34, 28, 23, 0.9);
+        }
+
+        .menu-item-img {
+            width: 90px;
+            height: 90px;
+            border-radius: 6px;
+            object-fit: cover;
+            flex-shrink: 0;
+            border: 1px solid var(--border-color);
+        }
+
+        .menu-item-info {
+            flex-grow: 1;
+        }
+
+        .menu-item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 0.4rem;
+            border-bottom: 1px dashed rgba(247, 241, 229, 0.15);
+            padding-bottom: 0.4rem;
+        }
+
+        .menu-item-title {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--cream-light);
+            font-family: 'Cinzel', serif;
+        }
+
+        .menu-item-price {
+            color: var(--gold-antique);
+            font-weight: 700;
+            font-size: 1rem;
+            white-space: nowrap;
+        }
+
+        .menu-item-desc {
+            font-size: 0.82rem;
+            color: var(--cream-muted);
+            line-height: 1.4;
+        }
+
+        .menu-external-link {
+            text-align: center;
+            margin-top: 3.5rem;
+        }
+
+        /* BBQ Platters Highlight Section */
+        .platters-section {
+            background: linear-gradient(rgba(15, 12, 10, 0.92), rgba(15, 12, 10, 0.92)), url('https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1920&q=80') center/cover fixed;
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .platter-flex {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .platter-content h2 {
+            font-size: 2.6rem;
+            margin-bottom: 1rem;
+        }
+
+        .platter-list {
+            list-style: none;
+            margin: 2rem 0;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .platter-list-item {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 0.8rem;
+            border-bottom: 1px solid var(--border-muted);
+        }
+
+        .platter-list-item h4 {
+            font-size: 1.1rem;
+            color: var(--gold-light);
+        }
+
+        .platter-list-item span {
+            color: var(--terracotta);
+            font-weight: 700;
+        }
+
+        .platter-list-item p {
+            font-size: 0.85rem;
+            color: var(--cream-muted);
+        }
+
+        /* Gallery Section */
+        .gallery {
+            background-color: var(--bg-dark);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.2rem;
+        }
+
+        .gallery-item {
+            position: relative;
+            height: 260px;
+            border-radius: 6px;
+            overflow: hidden;
+            cursor: pointer;
+            border: 1px solid var(--border-muted);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .gallery-item-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(15, 12, 10, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: var(--transition-smooth);
+        }
+
+        .gallery-item:hover .gallery-item-overlay {
+            opacity: 1;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-icon {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background: var(--terracotta);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+        }
+
+        /* Lightbox Modal */
+        .lightbox-modal {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.92);
+            z-index: 2000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition-smooth);
+            padding: 2rem;
+        }
+
+        .lightbox-modal.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .lightbox-content {
+            max-width: 900px;
+            max-height: 85vh;
+            position: relative;
+        }
+
+        .lightbox-content img {
+            max-width: 100%;
+            max-height: 80vh;
+            border-radius: 6px;
+            border: 1px solid var(--gold-antique);
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: -40px;
+            right: 0;
+            color: #fff;
+            font-size: 2rem;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Reservation & Contact Combined Section */
+        .contact-reservation {
+            background-color: var(--bg-surface);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3.5rem;
+        }
+
+        .contact-info-box {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            padding: 2.5rem;
+            border-radius: 8px;
+        }
+
+        .contact-info-box h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            color: var(--gold-antique);
+        }
+
+        .info-detail {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.2rem;
+            margin-bottom: 1.8rem;
+        }
+
+        .info-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(200, 90, 50, 0.15);
+            border: 1px solid var(--terracotta);
+            color: var(--terracotta);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            flex-shrink: 0;
+        }
+
+        .info-text h5 {
+            font-size: 0.95rem;
+            color: var(--cream-light);
+            margin-bottom: 0.2rem;
+        }
+
+        .info-text p, .info-text a {
+            color: var(--cream-muted);
+            font-size: 0.9rem;
+        }
+
+        .info-text a:hover {
+            color: var(--gold-antique);
+        }
+
+        .map-placeholder {
+            margin-top: 2rem;
+            border-radius: 6px;
+            overflow: hidden;
+            border: 1px solid var(--border-muted);
+            height: 200px;
+        }
+
+        /* Reservation Form */
+        .reservation-form-box {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            padding: 2.5rem;
+            border-radius: 8px;
+        }
+
+        .reservation-form-box h3 {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+            color: var(--cream-light);
+        }
+
+        .reservation-form-box p {
+            font-size: 0.88rem;
+            color: var(--cream-muted);
+            margin-bottom: 2rem;
+        }
+
+        .form-group-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.2rem;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--gold-light);
+            margin-bottom: 0.4rem;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 0.8rem 1rem;
+            background: var(--bg-dark);
+            border: 1px solid var(--border-muted);
+            border-radius: 4px;
+            color: var(--cream-light);
+            font-family: inherit;
+            font-size: 0.9rem;
+            transition: var(--transition-smooth);
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--gold-antique);
+            background: #14100c;
+        }
+
+        textarea.form-control {
+            resize: vertical;
+            min-height: 90px;
+        }
+
+        .form-disclaimer {
+            font-size: 0.75rem;
+            color: rgba(220, 208, 191, 0.6);
+            margin-top: 0.8rem;
+            line-height: 1.3;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #080605;
+            border-top: 1px solid var(--border-color);
+            padding: 4rem 0 2rem 0;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1.5fr;
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-brand p {
+            color: var(--cream-muted);
+            font-size: 0.9rem;
+            margin: 1.2rem 0;
+            max-width: 320px;
+        }
+
+        .footer-col h4 {
+            font-size: 1.1rem;
+            color: var(--gold-antique);
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+
+        .footer-links {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.7rem;
+        }
+
+        .footer-links a {
+            color: var(--cream-muted);
+            font-size: 0.88rem;
+            transition: var(--transition-smooth);
+        }
+
+        .footer-links a:hover {
+            color: var(--gold-antique);
+            padding-left: 5px;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid var(--border-muted);
+            padding-top: 2rem;
+            text-align: center;
+            font-size: 0.82rem;
+            color: rgba(220, 208, 191, 0.5);
+        }
+
+        /* Floating Call Button for Mobile */
+        .floating-call-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 55px;
+            height: 55px;
+            background: var(--terracotta);
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+            z-index: 999;
+            border: 2px solid var(--gold-antique);
+            transition: var(--transition-smooth);
+        }
+
+        .floating-call-btn:hover {
+            transform: scale(1.1);
+            background: var(--terracotta-hover);
+        }
+
+        /* Modal / Alert Notification */
+        .modal-alert {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: rgba(0,0,0,0.85);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 3000;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition-smooth);
+        }
+
+        .modal-alert.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .modal-alert-box {
+            background: var(--bg-surface);
+            border: 1px solid var(--gold-antique);
+            padding: 2.5rem;
+            border-radius: 8px;
+            max-width: 480px;
+            width: 90%;
+            text-align: center;
+            box-shadow: var(--shadow-subtle);
+        }
+
+        .modal-alert-box i {
+            font-size: 3rem;
+            color: var(--gold-antique);
+            margin-bottom: 1rem;
+        }
+
+        .modal-alert-box h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .modal-alert-box p {
+            font-size: 0.9rem;
+            color: var(--cream-muted);
+            margin-bottom: 1.8rem;
+        }
+
+        /* Responsive Breakpoints */
+        @media (max-width: 1024px) {
+            .hero h1 { font-size: 3rem; }
+            .about-grid, .contact-grid, .platter-flex { grid-template-columns: 1fr; gap: 2.5rem; }
+            .footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
+            .about-image-wrapper img { height: 400px; }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links, .nav-actions .btn-primary { display: none; }
+            .hamburger { display: block; }
+            .hero h1 { font-size: 2.4rem; }
+            .hero p { font-size: 1rem; }
+            .section-header h2 { font-size: 2rem; }
+            .form-group-row { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr; }
+            .about-badge-floating { right: 10px; bottom: -10px; padding: 1rem; }
+            .specialty-grid, .menu-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container navbar-container">
+            <a href="#home" class="brand-logo">
+                <div class="brand-logo-icon">
+                    <i class="fa-solid fa-utensils"></i>
+                </div>
+                <div class="brand-text">
+                    <h1>PIND</h1>
+                    <span>Johar Town, Lahore</span>
+                </div>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">Our Story</a></li>
+                <li><a href="#specialties">Specialties</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="#menu" class="btn btn-primary">Explore Menu</a>
+                <button class="hamburger" id="hamburger-btn" aria-label="Toggle Mobile Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-overlay" id="mobile-overlay"></div>
+    <div class="mobile-menu" id="mobile-menu">
+        <div>
+            <div class="mobile-menu-header">
+                <div class="brand-text">
+                    <h2 class="brand-font" style="font-size: 1.4rem; color: var(--gold-antique);">PIND RESTAURANT</h2>
+                    <span style="font-size: 0.65rem; color: var(--cream-muted); letter-spacing: 0.15em;">JOHAR TOWN, LAHORE</span>
+                </div>
+                <button class="mobile-close" id="mobile-close-btn">&times;</button>
+            </div>
+            <ul class="mobile-links">
+                <li><a href="#home" class="mobile-link">Home</a></li>
+                <li><a href="#about" class="mobile-link">Our Story</a></li>
+                <li><a href="#specialties" class="mobile-link">Specialties</a></li>
+                <li><a href="#menu" class="mobile-link">Menu</a></li>
+                <li><a href="#gallery" class="mobile-link">Gallery</a></li>
+                <li><a href="#contact" class="mobile-link">Contact & Location</a></li>
+            </ul>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 0.8rem;">
+            <a href="tel:+924235189989" class="btn btn-primary" style="width: 100%;">
+                <i class="fa-solid fa-phone"></i> Call (042) 35189989
+            </a>
+            <a href="https://maps.app.goo.gl/HofQprsTmSy1446v5" target="_blank" class="btn btn-outline" style="width: 100%;">
+                <i class="fa-solid fa-location-dot"></i> Get Directions
+            </a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <span class="badge"><i class="fa-solid fa-fire"></i> Authentic Pakistani Cuisine</span>
+                <h1>Desi Flavours.<br><span class="gold-gradient-text">Unforgettable Moments.</span></h1>
+                <p>Discover traditional Pakistani flavours, sizzling karahis, aromatic handis, mouth-watering BBQ, and hearty family dining at Pind Restaurant, Johar Town, Lahore.</p>
+                
+                <div class="hero-cta-group">
+                    <a href="#menu" class="btn btn-primary">
+                        <i class="fa-solid fa-utensils"></i> Explore Menu
+                    </a>
+                    <a href="tel:+924235189989" class="btn btn-gold">
+                        <i class="fa-solid fa-phone"></i> Call Restaurant
+                    </a>
+                    <a href="https://maps.app.goo.gl/HofQprsTmSy1446v5" target="_blank" class="btn btn-outline">
+                        <i class="fa-solid fa-map-location-dot"></i> Directions
+                    </a>
+                </div>
+
+                <div class="verified-notice">
+                    <i class="fa-solid fa-circle-check" style="color: #4CAF50;"></i>
+                    <span>Verified Branch: 30 Mughal Arcade / Civic Centre, Johar Town, Lahore</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section-padding" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=800&q=80" alt="Sizzling Pakistani Karahi Dish">
+                    <div class="about-badge-floating">
+                        <h4>100%</h4>
+                        <p>Halal & Fresh</p>
+                    </div>
+                </div>
+
+                <div class="about-text">
+                    <span class="badge">The Desi Tradition</span>
+                    <h2>A Tradition of Rich Desi Hospitality</h2>
+                    <div class="divider" style="margin: 0 0 1.5rem 0;"></div>
+                    <p>At Pind Restaurant Johar Town, we celebrate the true spirit of traditional Pakistani cooking. Our kitchen brings alive authentic recipes passed down through generations—slow-cooked mutton karahis, creamy handis, flame-kissed tikkas, and freshly baked tandoori naans.</p>
+                    <p>Designed for family gatherings, friendly feasts, and celebratory dinners, Pind Restaurant offers a warm, rustic, and welcoming environment right in the heart of Lahore’s vibrant Civic Centre area.</p>
+
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fa-solid fa-pepper-hot"></i></div>
+                            <div>
+                                <h4>Authentic Spices</h4>
+                                <p>Hand-ground desi spices for genuine local taste.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fa-solid fa-drumstick-bite"></i></div>
+                            <div>
+                                <h4>Live Charcoal BBQ</h4>
+                                <p>Succulent kebabs and tikkas grilled to perfection.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fa-solid fa-users"></i></div>
+                            <div>
+                                <h4>Family Atmosphere</h4>
+                                <p>Spacious seating ideal for family gatherings.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fa-solid fa-bread-slice"></i></div>
+                            <div>
+                                <h4>Fresh Tandoor</h4>
+                                <p>Roti and Naan cooked fresh upon order.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Signature Specialties -->
+    <section class="specialties section-padding" id="specialties">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge">House Highlights</span>
+                <h2>Chef's Signature Specialties</h2>
+                <div class="divider"></div>
+                <p>Taste our most celebrated dishes, prepared daily with fresh meats, pure desi ghee, and time-honored Pakistani cooking techniques.</p>
+            </div>
+
+            <div class="specialty-grid">
+                <!-- Specialty 1 -->
+                <div class="specialty-card">
+                    <div class="specialty-img-box">
+                        <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=600&q=80" alt="Desi Chicken Karahi">
+                        <span class="specialty-price-tag">Rs. 1,650 (Half)</span>
+                    </div>
+                    <div class="specialty-content">
+                        <h3>Desi Chicken Karahi</h3>
+                        <p>Fresh organic desi chicken cooked in a traditional iron wok with fresh tomatoes, green chilies, ginger, and aromatic desi ghee.</p>
+                        <a href="#reservation" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.75rem;">Reserve Table</a>
+                    </div>
+                </div>
+
+                <!-- Specialty 2 -->
+                <div class="specialty-card">
+                    <div class="specialty-img-box">
+                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80" alt="Mutton Peshawari Karahi">
+                        <span class="specialty-price-tag">Rs. 2,450 (Half)</span>
+                    </div>
+                    <div class="specialty-content">
+                        <h3>Mutton Peshawari Karahi</h3>
+                        <p>Tender mutton cuts cooked minimalist Peshawari style with natural fat, black pepper, tomatoes, and fresh ginger juliennes.</p>
+                        <a href="#reservation" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.75rem;">Reserve Table</a>
+                    </div>
+                </div>
+
+                <!-- Specialty 3 -->
+                <div class="specialty-card">
+                    <div class="specialty-img-box">
+                        <img src="https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=600&q=80" alt="Chicken White Handi">
+                        <span class="specialty-price-tag">Rs. 1,550 (Half)</span>
+                    </div>
+                    <div class="specialty-content">
+                        <h3>Chicken White Handi</h3>
+                        <p>Boneless chicken cubes simmered in a velvet cream sauce infused with white pepper, green cardamom, and cashew paste.</p>
+                        <a href="#reservation" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.75rem;">Reserve Table</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BBQ Platters Section -->
+    <section class="platters-section section-padding">
+        <div class="container">
+            <div class="platter-flex">
+                <div class="platter-content">
+                    <span class="badge">Feast Together</span>
+                    <h2 class="brand-font">Signature BBQ & Family Feasts</h2>
+                    <div class="divider" style="margin: 0 0 1.5rem 0;"></div>
+                    <p style="color: var(--cream-muted);">Perfectly portioned platters for family gatherings and group dining. Savor a variety of live charcoal-grilled tikkas, seekh kebabs, and chops served with fresh mint chutney and hot tandoori naan.</p>
+
+                    <div class="platter-list">
+                        <div class="platter-list-item">
+                            <div>
+                                <h4>Special Royal BBQ Platter</h4>
+                                <p>Includes Chicken Tikka, Seekh Kebabs, Fish Tikka, Tawa Chops & Malai Boti</p>
+                            </div>
+                            <span>Rs. 3,850</span>
+                        </div>
+                        <div class="platter-list-item">
+                            <div>
+                                <h4>Chicken Mix Platter</h4>
+                                <p>Chicken Boti, Malai Tikka, Gola Kebab & Stuffed Wings</p>
+                            </div>
+                            <span>Rs. 2,650</span>
+                        </div>
+                        <div class="platter-list-item">
+                            <div>
+                                <h4>Special Tawa Chops (Mutton)</h4>
+                                <p>Marinated mutton chops seared on live iron tawa with hot spices</p>
+                            </div>
+                            <span>Rs. 2,250</span>
+                        </div>
+                    </div>
+
+                    <a href="tel:+924235189989" class="btn btn-primary">
+                        <i class="fa-solid fa-phone"></i> Order Platter Now
+                    </a>
+                </div>
+
+                <div>
+                    <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=80" alt="BBQ Mix Platter" style="border-radius: 8px; border: 1px solid var(--gold-antique); box-shadow: var(--shadow-subtle);">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Menu Section -->
+    <section class="menu-section section-padding" id="menu">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge">Verified Menu & Prices</span>
+                <h2>Explore Our Desi Menu</h2>
+                <div class="divider"></div>
+                <p>Browsed directly from confirmed Johar Town branch price listings. Filter by category to find your favorite dishes.</p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="menu-filter-container">
+                <button class="menu-filter-btn active" data-filter="all">All Items</button>
+                <button class="menu-filter-btn" data-filter="karahi">Karahi Specialties</button>
+                <button class="menu-filter-btn" data-filter="handi">Handi Dishes</button>
+                <button class="menu-filter-btn" data-filter="bbq">BBQ & Kebabs</button>
+                <button class="menu-filter-btn" data-filter="rice-bread">Rice & Naan</button>
+                <button class="menu-filter-btn" data-filter="beverages">Desserts & Drinks</button>
+            </div>
+
+            <!-- Menu Grid -->
+            <div class="menu-grid" id="menu-grid">
+                <!-- Item 1 -->
+                <div class="menu-item-card" data-category="karahi">
+                    <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=150&q=80" alt="Desi Chicken Karahi" class="menu-item-img">
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <span class="menu-item-title">Desi Chicken Karahi</span>
+                            <span class="menu-item-price">Rs. 1,650</span>
+                        </div>
+                        <p class="menu-item-desc">Organic chicken cooked in pure desi ghee with green chilies & tomatoes (Half portion).</p>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="menu-item-card" data-category="karahi">
+                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=150&q=80" alt="Mutton Irani Karahi" class="menu-item-img">
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <span class="menu-item-title">Mutton Irani Karahi</span>
+                            <span class="menu-item-price">Rs. 2,550</span>
+                        </div>
+                        <p class="menu-item-desc">Mildly spiced tender mutton in thick yogurt-based onion gravy (Half portion).</p>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="menu-item-card" data-category="karahi">
+                    <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=150&q=80" alt="Mutton Peshawari Karahi" class="menu-item-img">
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <span class="menu-item-title">Mutton Peshawari Karahi</span>
+                            <span class="menu-item-price">Rs. 2,450</span>
+                        </div>
+                        <p class="menu-item-desc">Traditional KPK recipe with black pepper, salt, tomatoes, and ginger (Half portion).</p>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="menu-item-card" data-category="handi">
+                    <img src="https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=150&q=80" alt="Chicken White Handi" class="menu-item-img">
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <span class="menu-item-title">Chicken White Handi</span>
+                            <span class="menu-item-price">Rs. 1,550</span>
+                        </div>
+                        <p class="menu-item-desc">Boneless chicken cooked in fresh dairy cream, butter, and cashew sauce (Half portion).</p>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="menu-item-card" data-category="handi">
+                    <img src="https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=150&q=80" alt="Chicken Red Handi" class="menu-item-img">
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <span class="menu-item-title">Chicken Red Handi</span>
+                            <span class="menu-item-price">Rs. 1,480</span>
+                        </div>
+                        <p class="menu-item-desc">Rich tomato gravy boneless chicken handi sprinkled with crushed coriander.</p>
+                    </div>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="menu-item-card" data-category="bbq">
+                    <img src="https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?auto=format&fit=crop&w=150&q=80" alt="Chicken Tikka Piece" class="menu-item-img">
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <span class="menu-item-title">Chicken Tikka (Chest/Leg)</span>
+                            <span class="menu-item-price">Rs. 420</span>
+                        </div>
+                        <p class="menu-item-desc">Charcoal marinated leg or chest quarter served with lemon wedges.</p>
+                    </div>
+                </div>
+
+                <!-- Item 7 -->
+                <div class="menu-item-card" data-category="bbq">
+                    <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=150&q=80" alt="Chicken Reshmi Kebab" class="menu-item-img">
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <span class="menu-item-title">Chicken Reshmi Kebab (4 pcs)</span>
+                            <span class="menu-item-price">Rs. 980</span>
+                        </div>
+                        <p class="menu-item-desc">Melt-in-mouth minced chicken skewers grilled over hot coals.</p>
+                    </div>
+                </div>
+
+                <!-- Item 8 -->
+                <div class="menu-item-card" data-category="bbq">
+                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=150&q=80" alt="Fish Tikka" class="menu-item-img">
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <span class="menu-item-title">Fish Tikka (Seasonal)</span>
+                            <span class="menu-item-price">Rs. 1,850</span>
+                        </div>
+                        <p class="menu-item-desc">Spiced river fish cubes grilled on skewers with carom seeds (Ajwain).</p>
+                    </div>
+                </div>
+
+                <!-- Item 9 -->
+                <div class="menu-item-card" data-category="rice-bread">
+                    <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=150&q=80" alt="Chicken Biryani" class="menu-item-img">
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <span class="menu-item-title">Special Chicken Biryani</span>
+                            <span class="menu-item-price">Rs. 650</span>
+                        </div>
+                        <p class="menu-item-desc">Fragrant basmati rice layered with spiced chicken and saffron aroma.</p>
+                    </div>
+                </div>
+
+                <!-- Item 10 -->
+                <div class="menu-item-card" data-category="rice-bread">
+                    <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=150&q=80" alt="Garlic & Roghani Naan" class="menu-item-img">
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <span class="menu-item-title">Roghani / Garlic Naan</span>
+                            <span class="menu-item-price">Rs. 110</span>
+                        </div>
+                        <p class="menu-item-desc">Freshly baked in clay tandoor brushed with butter and sesame seeds.</p>
+                    </div>
+                </div>
+
+                <!-- Item 11 -->
+                <div class="menu-item-card" data-category="beverages">
+                    <img src="https://images.unsplash.com/photo-1527661591475-527312dd65f5?auto=format&fit=crop&w=150&q=80" alt="Special Kheer" class="menu-item-img">
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <span class="menu-item-title">Zafrani Rice Kheer</span>
+                            <span class="menu-item-price">Rs. 320</span>
+                        </div>
+                        <p class="menu-item-desc">Traditional slow-cooked rice pudding topped with pistachios & silver leaf.</p>
+                    </div>
+                </div>
+
+                <!-- Item 12 -->
+                <div class="menu-item-card" data-category="beverages">
+                    <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=150&q=80" alt="Lassi Beverage" class="menu-item-img">
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <span class="menu-item-title">Sweet / Salted Lassi</span>
+                            <span class="menu-item-price">Rs. 240</span>
+                        </div>
+                        <p class="menu-item-desc">Chilled traditional yogurt drink blended fresh.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-external-link">
+                <a href="https://menumoment.com/1268/pind-restaurant-lahore-menu-prices/" target="_blank" class="btn btn-outline">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> View Full Verified Online Menu
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery section-padding" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge">Visual Experience</span>
+                <h2>Pind Food & Ambience Gallery</h2>
+                <div class="divider"></div>
+                <p>Click any photo to open in full screen lightbox view.</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=1200&q=80')">
+                    <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=600&q=80" alt="Sizzling Mutton Karahi">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1200&q=80')">
+                    <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=600&q=80" alt="Live Charcoal BBQ">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80')">
+                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80" alt="Special Tawa Chops">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=1200&q=80')">
+                    <img src="https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=600&q=80" alt="Creamy Chicken Handi">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=1200&q=80')">
+                    <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=600&q=80" alt="Fresh Tandoori Naan">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80')">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80" alt="Warm Dining Atmosphere">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox-modal" id="lightbox-modal">
+        <div class="lightbox-content">
+            <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+            <img src="" id="lightbox-img" alt="Enlarged Food Gallery Image">
+        </div>
+    </div>
+
+    <!-- Contact & Reservation Combined Section -->
+    <section class="contact-reservation section-padding" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Verified Contact Box -->
+                <div class="contact-info-box">
+                    <h3>Contact & Location</h3>
+                    <p style="color: var(--cream-muted); font-size: 0.9rem; margin-bottom: 2rem;">Visit or call our Johar Town branch directly for phone orders and seating inquiries.</p>
+
+                    <div class="info-detail">
+                        <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="info-text">
+                            <h5>Branch Address</h5>
+                            <p>30 Mughal Arcade / Civic Centre area, Johar Town, Lahore, Pakistan</p>
+                        </div>
+                    </div>
+
+                    <div class="info-detail">
+                        <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div class="info-text">
+                            <h5>Direct Phone Number</h5>
+                            <a href="tel:+924235189989">(042) 35189989</a>
+                        </div>
+                    </div>
+
+                    <div class="info-detail">
+                        <div class="info-icon"><i class="fa-solid fa-clock"></i></div>
+                        <div class="info-text">
+                            <h5>Opening Hours</h5>
+                            <p>Monday – Sunday: 12:00 PM – 12:30 AM (Midnight)</p>
+                            <span style="font-size: 0.75rem; color: var(--gold-antique);">*Please confirm timing during public holidays</span>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; gap: 1rem; margin-top: 2rem;">
+                        <a href="tel:+924235189989" class="btn btn-primary" style="flex: 1;">
+                            <i class="fa-solid fa-phone"></i> Call Now
+                        </a>
+                        <a href="https://maps.app.goo.gl/HofQprsTmSy1446v5" target="_blank" class="btn btn-outline" style="flex: 1;">
+                            <i class="fa-solid fa-map-marked-alt"></i> Map
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Reservation Form -->
+                <div class="reservation-form-box" id="reservation">
+                    <h3>Table Reservation Enquiry</h3>
+                    <p>Send an enquiry to reserve your dining table for family & group gatherings.</p>
+
+                    <form id="res-form" onsubmit="handleReservation(event)">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+                        </div>
+
+                        <div class="form-group-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" class="form-control" placeholder="0300 1234567" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="guests">Guests</label>
+                                <select id="guests" class="form-control" required>
+                                    <option value="2">2 People</option>
+                                    <option value="4">4 People</option>
+                                    <option value="6">6 People</option>
+                                    <option value="8+">8+ Large Family</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group-row">
+                            <div class="form-group">
+                                <label for="date">Preferred Date</label>
+                                <input type="date" id="date" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="time">Preferred Time</label>
+                                <input type="time" id="time" class="form-control" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="notes">Special Requests</label>
+                            <textarea id="notes" class="form-control" placeholder="e.g. High chair required, birthday seating, floor sitting request..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-gold" style="width: 100%;">
+                            <i class="fa-solid fa-paper-plane"></i> Submit Reservation Request
+                        </button>
+
+                        <p class="form-disclaimer">
+                            <i class="fa-solid fa-triangle-exclamation"></i> Note: This demo form submits an enquiry. For instant booking confirmation, please call <strong>(042) 35189989</strong> directly.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Alert Modal for Submission -->
+    <div class="modal-alert" id="modal-alert">
+        <div class="modal-alert-box">
+            <i class="fa-solid fa-circle-check"></i>
+            <h3>Enquiry Submitted!</h3>
+            <p id="alert-msg">Thank you. Your reservation request has been logged. Please call the branch directly at (042) 35189989 to instantly confirm table availability.</p>
+            <button class="btn btn-primary" onclick="closeAlertModal()">Close Window</button>
+        </div>
+    </div>
+
+    <!-- Floating Mobile Direct Call Button -->
+    <a href="tel:+924235189989" class="floating-call-btn" title="Call Pind Restaurant Johar Town">
+        <i class="fa-solid fa-phone"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="brand-logo" style="margin-bottom: 1rem;">
+                        <div class="brand-logo-icon">
+                            <i class="fa-solid fa-utensils"></i>
+                        </div>
+                        <div class="brand-text">
+                            <h1>PIND</h1>
+                            <span>Johar Town, Lahore</span>
+                        </div>
+                    </div>
+                    <p>Authentic Pakistani desi dining experience featuring slow-cooked karahis, fresh handis, and live charcoal barbecue.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">Our Story</a></li>
+                        <li><a href="#specialties">Specialties</a></li>
+                        <li><a href="#menu">Full Menu</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Top Dishes</h4>
+                    <ul class="footer-links">
+                        <li><a href="#menu">Desi Chicken Karahi</a></li>
+                        <li><a href="#menu">Mutton Peshawari Karahi</a></li>
+                        <li><a href="#menu">Chicken White Handi</a></li>
+                        <li><a href="#menu">Royal BBQ Platter</a></li>
+                        <li><a href="#menu">Special Tawa Chops</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Branch Location</h4>
+                    <p style="font-size: 0.88rem; color: var(--cream-muted); margin-bottom: 0.8rem;">
+                        <i class="fa-solid fa-map-pin" style="color: var(--terracotta);"></i> 30 Mughal Arcade / Civic Centre, Johar Town, Lahore
+                    </p>
+                    <p style="font-size: 0.88rem; color: var(--cream-muted);">
+                        <i class="fa-solid fa-phone" style="color: var(--terracotta);"></i> (042) 35189989
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Pind Restaurant Johar Town Concept Demo. Built for presentation purposes. Verified business information: Johar Town, Lahore.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Vanilla JavaScript -->
+    <script>
+        // DOM Elements
+        const navbar = document.getElementById('navbar');
+        const hamburgerBtn = document.getElementById('hamburger-btn');
+        const mobileCloseBtn = document.getElementById('mobile-close-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileOverlay = document.getElementById('mobile-overlay');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+        const filterBtns = document.querySelectorAll('.menu-filter-btn');
+        const menuCards = document.querySelectorAll('.menu-item-card');
+        const lightboxModal = document.getElementById('lightbox-modal');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const alertModal = document.getElementById('modal-alert');
+
+        // Sticky Navbar Effect
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.style.background = 'rgba(15, 12, 10, 0.95)';
+                navbar.style.boxShadow = '0 4px 20px rgba(0,0,0,0.5)';
+            } else {
+                navbar.style.background = 'rgba(15, 12, 10, 0.85)';
+                navbar.style.boxShadow = 'none';
+            }
+        });
+
+        // Toggle Mobile Menu
+        function openMobileMenu() {
+            mobileMenu.classList.add('open');
+            mobileOverlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeMobileMenu() {
+            mobileMenu.classList.remove('open');
+            mobileOverlay.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        hamburgerBtn.addEventListener('click', openMobileMenu);
+        mobileCloseBtn.addEventListener('click', closeMobileMenu);
+        mobileOverlay.addEventListener('click', closeMobileMenu);
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', closeMobileMenu);
+        });
+
+        // Menu Filter Functionality
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const filter = btn.getAttribute('data-filter');
+
+                menuCards.forEach(card => {
+                    if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                        card.style.display = 'flex';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Lightbox Functions
+        function openLightbox(src) {
+            lightboxImg.src = src;
+            lightboxModal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            lightboxModal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close Lightbox on backdrop click
+        lightboxModal.addEventListener('click', (e) => {
+            if (e.target === lightboxModal) {
+                closeLightbox();
+            }
+        });
+
+        // Reservation Form Submission
+        function handleReservation(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const guests = document.getElementById('guests').value;
+            const date = document.getElementById('date').value;
+            const time = document.getElementById('time').value;
+
+            document.getElementById('alert-msg').innerText = `Thank you ${name}! Your reservation request for ${guests} guest(s) on ${date} at ${time} has been recorded. Please call (042) 35189989 to finalize your booking directly.`;
+            
+            alertModal.classList.add('active');
+            document.getElementById('res-form').reset();
+        }
+
+        function closeAlertModal() {
+            alertModal.classList.remove('active');
+        }
+
+        // Set Default Date to Today
+        document.getElementById('date').min = new Date().toISOString().split('T')[0];
+    </script>
+</body>
+</html>
